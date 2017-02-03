@@ -22,6 +22,12 @@
 
     <!-- Custom Theme Style -->
     <link href="./build/css/custom.min.css" rel="stylesheet">
+
+    <style>
+      #table-revenue tr {
+        cursor: pointer;
+      }
+    </style>
   </head>
 
   <body class="nav-md">
@@ -268,7 +274,7 @@
                   </div>
                   <div class="x_content">
 
-                    <table class="table">
+                    <table class="table table-hover" id="table-revenue">
                       <thead>
                         <tr>
                           <th>Activity</th>
@@ -479,5 +485,10 @@
     <!-- Custom Theme Scripts -->
     <script src="./build/js/custom.min.js"></script>
 
+    <script>
+      $('#table-revenue tbody tr').click(function() {
+        window.location.href = 'details.html';
+      });
+    </script>
   </body>
 </html>
